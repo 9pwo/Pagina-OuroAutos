@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left:  0;
+	background: #fff;
+}
+
+
+/*Header superior*/
+
+.header-superior{
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+.Logo{
+	margin: 20px 25px;
+	width: 250px;
+}
+
+header div input{
+	width: 300px;
+	padding: 10px;
+}
+
+.div-Presentacion{
+	padding-top: 140px;
+}
+
+/*Barra Menú*/
+
+.container-menu{
+	width: 100%;
+	height: 70px;
+	background: #929191;
+	padding: 0px 20px;
+}
+
+.menu{
+	max-width: 1200px;
+	margin: auto;
+	height: 100%;
+}
+
+nav{
+	height: 100%;
+}
+
+nav > ul{
+	height: 100%;
+	display: flex;
+}
+
+nav ul li{
+	height: 100%;
+	list-style: none;
+	position: relative;
+}
+
+nav > ul > li:first-child > a{
+	background-image: url(casa.png);
+	background-size: 24px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 20px 40px;
+}
+
+nav > ul > li:first-child:hover > a{
+	background-image: url(casa.png);
+	background-size: 24px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 20px 40px;
+
+}
+
+
+nav > ul > li > a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	color: white;
+	align-items: center;
+	padding: 14px;
+	text-transform: uppercase;
+	font-size: 14px;
+	transition: all 300ms ease;
+}
+
+nav > ul > li > a:hover{
+	transform: scale(1.1);
+	background: #D5D5D5;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#selected{
+	transform: scale(1.1);
+	background-color: #D5D5D5;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*SubMenu*/
+
+nav ul li ul{
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 90px;
+	left: -5px;
+	padding: 14px 0px;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 10;
+	transition: all 300ms ease;
+
+}
+
+nav ul li:hover ul{
+	visibility: visible;
+	opacity: 1;
+	top: 70px;
+
+}
+
+nav ul li ul:before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 12px solid white;
+	position: absolute;
+	top: -12px;
+	left: 20px;
+}
+
+nav ul li ul li a{
+	display: block;
+	color: black;
+	padding: 6px;
+	padding-left: 14px;
+	margin-top: 10px;
+	font-size: 13px;
+	text-transform: uppercase;
+	transition: all 300ms ease;
+}
+
+nav ul li ul li a:hover{
+	transform: scale(1.1);
+	background: #D5D5D5;
+	padding-left: 30px;
+	font-size: 13px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+/*Presentación*/
+
+.img-2 img{
+	width: 330px;
+	margin-left: 480px;
+}
+
+.titulo h1{
+	padding-left: 330px;
+	padding-right: 330px;
+	font-size: 70px;
+	margin-bottom: 5px;
+	display: flex;
+	font-family: 'Playfair Display SC', serif;
+	font-weight: 0;
+}
+
+#labienvenida{
+	padding-left: 400px;
+	padding-right: 390px;
+	font-size: 70px;
+	margin-bottom: 30px;
+	display: flex;
+	font-family: 'Playfair Display SC', serif;
+	font-weight: 0;
+}
+
+#slogan{
+	padding-left: 440px;
+	font-size: 17px;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+
+.inicio-p p{
+	margin-left: 250px;
+	text-align: center;
+	margin-right: 250px;
+	margin-top: 37px;
+	font-family: 'Roboto Flex', sans-serif;
+	font-size: 17px;
+	margin-bottom: 200px;
+}
+
+/*Vehículos*/
+
+#Diseños{
+	padding-left: 520px;
+	font-size: 50px;
+	margin-bottom: 5px;
+	display: flex;
+	font-family: 'Playfair Display SC', serif;
+	font-weight: 0;
+}
+
+#slogan2{
+	margin-left: 570px;
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	font-size: 16px;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.vehiculos-p p{
+	margin-left: 250px;
+	text-align: center;
+	margin-right: 250px;
+	margin-top: 37px;
+	font-family: 'Roboto Flex', sans-serif;
+	font-size: 16px;
+	margin-bottom: 150px;
+}
+
+.suvimu{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+.figora{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+#grafico1{
+	margin-left: 270px;
+}
+
+#grafico2{
+	margin-right: 170px;
+}
+
+/*Piezas del Auto*/
+
+#Piezas{
+	padding-left: 420px;
+	font-size: 40px;
+	margin-bottom: 5px;
+	margin-top: 220px;
+	display: flex;
+	font-family: 'Playfair Display SC', serif;
+	font-weight: 0;
+}
+
+#slogan3{
+	padding-left: 440px;
+	font-size: 17px;
+	font-family: 'Cormorant Garamond', serif;
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 90px;
+}
+
+
+
+.imagenes ul{
+	display: flex;
+	padding: 0;
+	animation: cambio 20s infinite alternate ease;
+}
+
+.imagenes ul li{
+	list-style: none;
+	width: 100%;
+}
+
+
+@keyframes cambio{
+	0% { margin-left: 0;}
+	20% { margin-left: 0;}
+
+	25% { margin-left: -100%; }
+	45% { margin-left: -100%; }
+
+	50% { margin-left: -200%; }
+	70% { margin-left: -200%; }
+
+	75% { margin-left: 0; }
+	100% { margin-left: 0; }
+}
+
+/*Oficinas*/
+
+#Oficinas{
+	padding-left: 480px;
+	font-size: 40px;
+	margin-top: 220px;
+	display: flex;
+	font-family: 'Playfair Display SC', serif;
+	font-weight: 0;
+}
+
+#slogan4 i{
+	padding-left: 580px;
+	font-size: 17px;
+	font-family: 'Cormorant Garamond', serif;
+	display: flex;
+	margin-top: 39px;
+	margin-bottom: 50px;
+}
+
+#oficina-p{
+	margin-left: 250px;
+	text-align: center;
+	margin-right: 250px;
+	font-family: 'Roboto Flex', sans-serif;
+	font-size: 17px;
+	margin-bottom: 50px;
+}
+
+#imagen-oficinas{
+	margin-left: 310px;
+	height: 599px;
+	width: 750px;
+}
+
+
+/*Planta Industrial*/
+
+
+#sedeadministrativa{
+	padding-left: 380px;
+	font-size: 40px;
+	margin-top: 180px;
+	display: flex;
+	font-family: 'Playfair Display SC', serif;
+	font-weight: 0;
+}
+
+#sede-p{
+	padding-top: 70px;
+	margin-left: 50px;
+	text-align: center;
+	margin-right: 50px;
+	font-family: 'Roboto Flex', sans-serif;
+	font-size: 17px;
+	margin-bottom: 70px;
+}
+
+#imagen-planta{
+	margin-left: 360px;
+	height: 430px;
+	width: 630px;
+}
+
+#imagen-fabricacion{
+	margin-left: 190px;
+}
+
+#imagen-fabricacion2{
+	margin-left: 190px;
+}
+
+#link-planta{
+	display: inline-block;
+	margin-left: 640px;
+	font-family: 'Roboto Flex', sans-serif;
+	font-size: 12px;
+	color: black;
+	transition: all 300ms ease;
+}
+
+#link-planta:hover{
+	transform: scale(1.1);
+	color: #909090;
+}
+
+/*Sala de Exhibición*/
+
+.h1-exhibicion h1{
+	padding-left: 490px;
+	font-size: 20px;
+	margin-top:120px;
+	display: flex;
+	font-family: 'Playfair Display SC', serif;
+	font-weight: 0;
+}
+
+.horario-p p i{
+	padding-left: 600px;
+	font-size: 17px;
+	font-family: 'Cormorant Garamond', serif;
+	display: flex;
+	margin-top: 39px;
+	margin-bottom: 50px;
+}
+
+.dia-p1 p{
+	margin-left: 250px;
+	text-align: center;
+	margin-right: 250px;
+	font-family: 'Roboto Flex', sans-serif;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.dia-p2 p{
+	margin-left: 250px;
+	text-align: center;
+	margin-right: 250px;
+	font-family: 'Roboto Flex', sans-serif;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.dia-p3 p{
+	margin-left: 250px;
+	text-align: center;
+	margin-right: 250px;
+	font-family: 'Roboto Flex', sans-serif;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+#a-exhibicion{
+	margin-left: 630px;
+	margin-right: 250px;
+	font-family: 'Roboto Flex', sans-serif;
+	font-size: 14px;
+	color: black;
+	transition: all 200ms ease;
+}
+
+#a-exhibicion:hover{
+	transform: scale(1.1);
+	color: #C7C7C7;
+}
+
+
+
+
+/*Footer*/
+
+footer h3{
+	margin-left: 200px;
+	margin-right: 200px;
+	text-align: center;
+	font-family: 'Roboto Flex', sans-serif;
+	font-size: 14px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	color: #000;
+}
+
+/*elementos responsivos*/
+
+.icon-menu{
+	font-size: 26px;
+	color: white;
+	cursor: pointer;
+	width: 26px;
+	height: 100%;
+	display: none;
+	align-items: center;
+}
+
+#label-menu{
+	width: 26px;
+	height: 100%;
+	display: none;
+}
+
+#check-menu{
+	display: none;
+}
+
+@media screen and (max-width: 720px){
+
+	.search{
+		display: none;
+	}
+
+	.header-superior{
+		padding: 10px;
+	}
+
+	.Logo img{
+		width: 200px;
+	}
+
+	nav > ul{
+		flex-direction: column;
+		background-color: #929191;
+		position: fixed;
+		left: 0;
+		top: 158px;
+		width: 100%;
+		height: 0px;
+		transition: all 300ms ease;
+		z-index: 100;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	nav > ul > li > a:hover{
+		transform: scale(1);
+	}
+
+	nav ul li ul li{
+		left: 20px;
+	}
+
+	nav > ul > li >ul:hover li{
+		top: 0px;
+	}
+
+	nav > ul > li:first-child a{
+		background-position: 20px;
+	}
+
+	#selected{
+		transform: scale(1);
+	}
+
+	#label-check{
+		display: block;
+	}
+
+	.icon-menu{
+		display: flex;
+		align-items: center;
+		padding-top: 22px;
+	}
+
+	#check-menu:checked ~ nav > ul{
+		height: 300px;
+		visibility: visible;
+		opacity: 1;
+	}
+}

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left:  0;
+	background: #fff;
+}
+
+
+/*Header superior*/
+
+.header-superior{
+	max-width: 1000px;
+	margin: auto;
+	margin-left: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+.Logo{
+	margin: 20px 25px;
+	width: 250px;
+	margin-left: 17px;
+}
+
+header div input{
+	width: 300px;
+	padding: 10px;
+}
+
+.div-Presentacion{
+	padding-top: 140px;
+}
+
+.search{
+	margin-right: 8px;
+}
+
+/*Barra Menú*/
+
+.container-menu{
+	width: 100%;
+	height: 70px;
+	background: #929191;
+	padding: 0px 20px;
+	padding-left: 71px;
+}
+
+.menu{
+	max-width: 1200px;
+	margin: auto;
+	height: 100%;
+}
+
+nav{
+	height: 100%;
+}
+
+nav > ul{
+	height: 100%;
+	display: flex;
+}
+
+nav ul li{
+	height: 100%;
+	list-style: none;
+	position: relative;
+}
+
+nav > ul > li:first-child > a{
+	background-image: url(casa.png);
+	background-size: 24px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 20px 40px;
+}
+
+nav > ul > li:first-child:hover > a{
+	background-image: url(casa.png);
+	background-size: 24px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 20px 40px;
+
+}
+
+
+nav > ul > li > a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	color: white;
+	align-items: center;
+	padding: 14px;
+	text-transform: uppercase;
+	font-size: 14px;
+	transition: all 300ms ease;
+}
+
+nav > ul > li > a:hover{
+	transform: scale(1.1);
+	background: #D5D5D5;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+#selected2{
+	transform: scale(1.1);
+	background-color: #D5D5D5;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+/*SubMenu*/
+
+nav ul li ul{
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 90px;
+	left: -5px;
+	padding: 14px 0px;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 10;
+	transition: all 300ms ease;
+
+}
+
+nav ul li:hover ul{
+	visibility: visible;
+	opacity: 1;
+	top: 70px;
+
+}
+
+nav ul li ul:before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 12px solid white;
+	position: absolute;
+	top: -12px;
+	left: 20px;
+}
+
+nav ul li ul li a{
+	display: block;
+	color: black;
+	padding: 6px;
+	padding-left: 14px;
+	margin-top: 10px;
+	font-size: 13px;
+	text-transform: uppercase;
+	transition: all 300ms ease;
+}
+
+nav ul li ul li a:hover{
+	transform: scale(1.1);
+	background: #D5D5D5;
+	padding-left: 30px;
+	font-size: 13px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*Sobre Nosotros*/
+
+.sobre-nosotros h1{
+	margin-top: 200px;
+	padding-left: 470px;
+	font-size: 43px;
+	margin-bottom: 5px;
+	display: flex;
+	font-family: 'Playfair Display SC', serif;
+	font-weight: 0;
+}
+
+.subtitulo p i{
+	margin-left: 580px;
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	font-size: 16px;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.descripcion p{
+	margin-left: 250px;
+	text-align: center;
+	margin-right: 250px;
+	font-family: 'Roboto Flex', sans-serif;
+	font-size: 17px;
+	margin-bottom: 50px;
+}
+
+#imagen{
+	height: 900px;
+	width: 1300px;
+	margin-left: 25px;
+}
+
+footer h3{
+	margin-left: 200px;
+	margin-right: 200px;
+	text-align: center;
+	font-family: 'Roboto Flex', sans-serif;
+	font-size: 14px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	color: #000;
+}
+
